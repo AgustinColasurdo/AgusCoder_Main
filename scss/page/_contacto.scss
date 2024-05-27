@@ -1,0 +1,20 @@
+.textoContacto {
+    text-align: center;
+}
+
+.tarjetaAsesorPadre {
+    @include flex(inherit, inherit, space-evenly, inherit);
+
+    .tarjetaAsesor {
+        border: solid black;
+        width: 197px;
+        color: black;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        .imgAsesor {
+            width: 185px;
+            height: 350px;
+        }
+    }
+}

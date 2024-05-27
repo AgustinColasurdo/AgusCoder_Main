@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.letraGigante {
+  font-size: 150px;
+  color: black;
+}
+
+.letraGigante2 {
+  font-size: 150px;
+  color: white;
+  background-color: black;
+}
+
+.aclaraciones {
+  background-color: lightgrey;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  position: relative;
+  top: 15px;
+}
+
+.textoTachado {
+  text-decoration: line-through;
+}
+
+.positionAbsolute {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+
+header {
+  background-color: lightgrey;
+}
+
+header.positionSticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header.positionSticky .headerContainer {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 2, 1fr;
+}
+header.positionSticky .headerContainer .boxLogo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+header.positionSticky .headerContainer .boxLogo .iconSize {
+  height: 100px;
+  width: 100px;
+}
+header.positionSticky .headerContainer .boxTitulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+header.positionSticky .headerContainer .boxNav {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+header.positionSticky .headerContainer .boxNav ul.estiloNav :nth-child(1) {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.imgNormal img {
+  height: 30rem;
+}
+
+h2.subtituloOferta {
+  color: white;
+  background-color: black;
+  margin-bottom: 0px;
+}
+
+.containerOferta {
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  justify-content: inherit;
+  flex-wrap: inherit;
+  background-color: black;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+.containerOferta .letraOferta {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+}
+
+.fotoCard {
+  width: 100%;
+  height: 100%;
+}
+
+.letraCard {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.newArrival1 {
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: inherit;
+}
+.newArrival1 .verMas {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.newArrival2 {
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: inherit;
+  background-color: black;
+}
+.newArrival2 .verMas2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 30px;
+}
+
+.textoContacto {
+  text-align: center;
+}
+
+.tarjetaAsesorPadre {
+  display: flex;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: space-evenly;
+  flex-wrap: inherit;
+}
+.tarjetaAsesorPadre .tarjetaAsesor {
+  border: solid black;
+  width: 197px;
+  color: black;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.tarjetaAsesorPadre .tarjetaAsesor .imgAsesor {
+  width: 185px;
+  height: 350px;
+}
+
+h2.tituloTienda {
+  display: flex;
+  font-size: 60px;
+}
+
+.tituloTienda2 {
+  font-size: 45px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+}
+
+.flexPan {
+  display: flex;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: space-evenly;
+  flex-wrap: inherit;
+}
+.flexPan .tarjetaPan {
+  text-align: center;
+  width: 400px;
+}
+.flexPan .tarjetaPan h4.subTarjeta {
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  font-size: 35px;
+}
+.flexPan .tarjetaPan .fontTarjeta {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 50px;
+}
+.flexPan .tarjetaPan .fontTarjeta .carritoPan {
+  width: 50px;
+}
+
+#tiendaContainer {
+  display: grid;
+  grid-template-columns: 5, 1fr;
+  grid-template-rows: 2, 1fr;
+  row-gap: 15px;
+  column-gap: 15px;
+  width: 90vw;
+  margin: 40px;
+  grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9 prod10";
+}
+#tiendaContainer .prod1 {
+  grid-area: prod1;
+}
+#tiendaContainer .prod2 {
+  grid-area: prod2;
+}
+#tiendaContainer .prod3 {
+  grid-area: prod3;
+}
+#tiendaContainer .prod4 {
+  grid-area: prod4;
+}
+#tiendaContainer .prod5 {
+  grid-area: prod5;
+}
+#tiendaContainer .prod6 {
+  grid-area: prod6;
+}
+#tiendaContainer .prod7 {
+  grid-area: prod7;
+}
+#tiendaContainer .prod8 {
+  grid-area: prod8;
+}
+#tiendaContainer .prod9 {
+  grid-area: prod9;
+}
+#tiendaContainer .prod10 {
+  grid-area: prod10;
+}
+#tiendaContainer .tarjetaProductos {
+  padding: 20px;
+  border: solid gray 5px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  width: 350px;
+  height: 375px;
+  position: relative;
+}
+#tiendaContainer .tarjetaProductos .tarjetaImg {
+  width: 250px;
+  height: 190px;
+}
+#tiendaContainer .tarjetaProductos .carrito {
+  width: 30px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+#tiendaContainer .tarjetaProductos .precioTarjeta {
+  position: absolute;
+  left: 7px;
+  bottom: 3px;
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#mainService {
+  background-color: black;
+}
+
+.containerBannerService {
+  display: flex;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: center;
+  flex-wrap: inherit;
+}
+.containerBannerService .bannerService {
+  width: 60vw;
+}
+
+.parrafoSer1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.parrafoSer2 {
+  background-color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.imgSerCentro {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+
+.videoST {
+  width: 100%;
+  height: 70rem;
+}
+
+.tituloCapacitaciones {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  margin: 15px;
+}
+
+.padreCapacitaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: inherit;
+  flex-wrap: inherit;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 70%;
+}
+.padreCapacitaciones .fontCapac {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  padding: 15px;
+}
+
+#cuadroCursos {
+  display: grid;
+  margin: 0 auto;
+  width: 50vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 12px;
+  column-gap: 12px;
+}
+#cuadroCursos .box {
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: inherit;
+  border: 3px solid black;
+}
+#cuadroCursos .box .imgCuadroCap {
+  width: 100%;
+  height: 100%;
+}
+#cuadroCursos .box1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+#cuadroCursos .box2 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+#cuadroCursos .box5 {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+#footerPadre {
+  display: grid;
+  border: solid black;
+  background-color: darkgray;
+  height: 200px;
+  grid-template-columns: 10% 1fr 45%;
+  grid-template-rows: 80px 50px 50px;
+  grid-template-areas: "logo1 info2 tel3" "logo1 info2 tel3" "logo1 dir4 em5";
+}
+#footerPadre .redesFooter {
+  grid-area: logo1;
+}
+#footerPadre .redesFooter div .logoFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: inherit;
+  flex-wrap: inherit;
+}
+#footerPadre .redesFooter .imgFooter {
+  width: 30px;
+  height: 30px;
+}
+#footerPadre .infoFooter {
+  grid-area: info2;
+}
+#footerPadre .telFooter {
+  grid-area: tel3;
+}
+#footerPadre .direcFooter {
+  grid-area: dir4;
+}
+#footerPadre .emailFooter {
+  grid-area: em5;
+}
+
+/*# sourceMappingURL=estilos.css.map */

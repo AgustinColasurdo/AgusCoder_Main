@@ -1,0 +1,119 @@
+h2.tituloTienda {
+    display: flex;
+    font-size: 60px;
+}
+
+.tituloTienda2 {
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+}
+
+.flexPan {
+    @include flex(inherit, inherit, space-evenly, inherit);
+
+    .tarjetaPan {
+        text-align: center;
+        width: 400px;
+
+        h4.subTarjeta {
+            padding: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            font-size: 35px;
+        }
+
+        .fontTarjeta {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 50px;
+
+            .carritoPan {
+                width: 50px;
+            }
+        }
+    }
+}
+
+#tiendaContainer {
+    display: grid;
+    grid-template-columns: 5, 1fr;
+    grid-template-rows: 2, 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    width: 90vw;
+    margin: 40px;
+    grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9 prod10";
+
+    .prod1 {
+        grid-area: prod1;
+    }
+
+    .prod2 {
+        grid-area: prod2;
+    }
+
+    .prod3 {
+        grid-area: prod3;
+    }
+
+    .prod4 {
+        grid-area: prod4;
+    }
+
+    .prod5 {
+        grid-area: prod5;
+    }
+
+    .prod6 {
+        grid-area: prod6;
+    }
+
+    .prod7 {
+        grid-area: prod7;
+    }
+
+    .prod8 {
+        grid-area: prod8;
+    }
+
+    .prod9 {
+        grid-area: prod9;
+    }
+
+    .prod10 {
+        grid-area: prod10;
+    }
+
+    .tarjetaProductos {
+        padding: 20px;
+        border: solid gray 5px;
+        border-radius: 10px;
+        background-color: white;
+        text-align: center;
+        width: 350px;
+        height: 375px;
+        position: relative;
+
+        .tarjetaImg {
+            width: 250px;
+            height: 190px;
+        }
+
+        .carrito {
+            width: 30px;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+        }
+
+        .precioTarjeta {
+            position: absolute;
+            left: 7px;
+            bottom: 3px;
+            background-color: lightgrey;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+}

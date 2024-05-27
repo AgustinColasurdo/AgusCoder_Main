@@ -1,0 +1,38 @@
+#footerPadre {
+    display: grid;
+    border: solid black;
+    background-color: darkgray;
+    height: 200px;
+    grid-template-columns: 10% 1fr 45%;
+    grid-template-rows: 80px 50px 50px;
+    grid-template-areas: "logo1 info2 tel3" "logo1 info2 tel3" "logo1 dir4 em5";
+
+    .redesFooter {
+        grid-area: logo1;
+
+        div .logoFooter {
+            @include flex(column, inherit, inherit, inherit)
+        }
+
+        .imgFooter {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .infoFooter {
+        grid-area: info2;
+    }
+
+    .telFooter {
+        grid-area: tel3;
+    }
+
+    .direcFooter {
+        grid-area: dir4;
+    }
+
+    .emailFooter {
+        grid-area: em5;
+    }
+}
