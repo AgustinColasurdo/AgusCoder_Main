@@ -1,0 +1,283 @@
+@media screen and (max-width: 1400px) {
+    #footerPadre {
+        width: auto;
+
+    }
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+
+
+    //INDEX QUERIE
+
+    .letraGigante {
+        font-size: 30px;
+    }
+
+    .letraGigante2 {
+        font-size: 30px;
+    }
+
+    div.newArrival1 img {
+        width: 190px;
+        ;
+    }
+
+    div.newArrival2 img {
+        width: 190px;
+        ;
+    }
+
+
+
+
+    //CONTACTO QUERIE
+
+    .tarjetaAsesorPadre {
+        display: flex;
+        flex-direction: inherit;
+        align-items: inherit;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+
+
+    //PRODUCTOS QUERIE
+
+    #tiendaContainer .tarjetaProductos {
+        width: 280px;
+        height: 350px;
+        position: relative;
+        font-size: 10px;
+    }
+
+    #tiendaContainer .tarjetaProductos .tarjetaImg {
+        width: 210px;
+        height: 150px;
+    }
+
+    #tiendaContainer .tarjetaProductos .carrito {
+        width: 25px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+    }
+
+    #tiendaContainer .tarjetaProductos .precioTarjeta {
+        position: absolute;
+        left: 7px;
+        bottom: 3px;
+        background-color: lightgrey;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+
+    //SRVICIO QUERIE
+
+    .parrafoSer1 {
+        font-size: 30px;
+    }
+
+    .parrafoSer2 {
+        font-size: 30px;
+    }
+
+    .imgSerCentro {
+        display: none;
+    }
+
+    .videoST {
+        height: 20rem;
+    }
+
+
+
+
+    //CAPACITACIONES QUERIE
+
+    .tituloCapacitaciones {
+        font-size: 60px;
+    }
+
+    .fontCapac {
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    //HEADER QUERIE
+
+    h1 {
+        width: 5px;
+    }
+
+    header.positionSticky .headerContainer .boxLogo .iconSize {
+        height: 25px;
+        width: 25px;
+    }
+
+
+    //FOOTER QUERIE
+
+    #footerPadre {
+        font-size: 10px;
+        width: auto;
+        height: 200px;
+        grid-template-columns: 10% 1fr 45%;
+        grid-template-rows: 80px 50px 50px;
+        grid-template-areas: "logo1 info2 tel3" "logo1 info2 tel3" "logo1 dir4 em5";
+    }
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+
+
+    //INDEX QUERIE
+
+    .letraGigante {
+        font-size: 30px;
+    }
+
+    .letraGigante2 {
+        font-size: 30px;
+    }
+
+    div.newArrival1 img {
+        display: none;
+    }
+
+    div.newArrival2 img {
+        display: none;
+    }
+
+
+    //PRODUCTOS QUERIES
+
+    h2.tituloTienda {
+        display: none;
+    }
+
+    .aclaraciones {
+        display: none;
+    }
+
+    .tituloTienda2 {
+        font-size: 25px;
+    }
+
+    .flexPan .tarjetaPan {
+        width: 250px;
+    }
+
+    .flexPan .tarjetaPan h4.subTarjeta {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .flexPan .tarjetaPan .fontTarjeta {
+        font-size: 10px;
+        padding: 40px;
+    }
+
+    .flexPan .tarjetaPan .fontTarjeta .carritoPan {
+        width: 45px;
+    }
+
+    section div.tarjetaPan img {
+        width: 80px;
+    }
+
+    #tiendaContainer {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-rows: 5, 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        width: 25vw;
+        margin: 15px;
+        grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8" "prod9 prod10";
+    }
+
+    #tiendaContainer .tarjetaProductos {
+        width: 210px;
+        height: 290px;
+        position: relative;
+        font-size: 10px;
+    }
+
+    #tiendaContainer .tarjetaProductos .tarjetaImg {
+        width: 150px;
+        height: 100px;
+    }
+
+    #tiendaContainer .tarjetaProductos .carrito {
+        width: 10px;
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+    }
+
+    #tiendaContainer .tarjetaProductos .precioTarjeta {
+        position: absolute;
+        left: 7px;
+        bottom: 3px;
+        background-color: lightgrey;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+
+
+
+    // SERVICIO QUERIE
+
+    .containerBannerService .bannerService {
+        width: 55vw;
+    }
+
+    .parrafoSer1 {
+        font-size: 15px;
+    }
+
+    .parrafoSer2 {
+        font-size: 15px;
+    }
+
+    .imgSerCentro {
+        display: none;
+    }
+
+    .videoST {
+        height: 10rem;
+    }
+
+
+
+    //CAPACITACIONES QUERIE
+
+    .tituloCapacitaciones {
+        font-size: 30px;
+    }
+
+    .padreCapacitaciones .fontCapac {
+        font-size: 10px;
+    }
+
+
+
+
+
+}

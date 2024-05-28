@@ -36,54 +36,9 @@ h2.tituloTienda {
 }
 
 #tiendaContainer {
-    display: grid;
-    grid-template-columns: 5, 1fr;
-    grid-template-rows: 2, 1fr;
-    row-gap: 15px;
-    column-gap: 15px;
+    @include flex(inherit, inherit, space-evenly, wrap);
     width: 90vw;
     margin: 40px;
-    grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9 prod10";
-
-    .prod1 {
-        grid-area: prod1;
-    }
-
-    .prod2 {
-        grid-area: prod2;
-    }
-
-    .prod3 {
-        grid-area: prod3;
-    }
-
-    .prod4 {
-        grid-area: prod4;
-    }
-
-    .prod5 {
-        grid-area: prod5;
-    }
-
-    .prod6 {
-        grid-area: prod6;
-    }
-
-    .prod7 {
-        grid-area: prod7;
-    }
-
-    .prod8 {
-        grid-area: prod8;
-    }
-
-    .prod9 {
-        grid-area: prod9;
-    }
-
-    .prod10 {
-        grid-area: prod10;
-    }
 
     .tarjetaProductos {
         padding: 20px;
