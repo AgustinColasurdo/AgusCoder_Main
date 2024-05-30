@@ -1,3 +1,8 @@
+div.boxNav a:hover {
+  border: 10px solid black;
+  background-color: rgb(238, 193, 111);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -36,6 +41,7 @@ h2 {
   padding: 15px;
   position: relative;
   top: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .textoTachado {
@@ -130,7 +136,7 @@ h2.subtituloOferta {
   flex-wrap: inherit;
 }
 .newArrival1 .verMas {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-decoration: none;
   color: black;
   font-size: 30px;
@@ -145,7 +151,7 @@ h2.subtituloOferta {
   background-color: black;
 }
 .newArrival2 .verMas2 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-decoration: none;
   color: white;
   position: relative;
@@ -168,7 +174,7 @@ h2.subtituloOferta {
   width: 197px;
   color: black;
   text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .tarjetaAsesorPadre .tarjetaAsesor .imgAsesor {
   width: 185px;
@@ -182,7 +188,7 @@ h2.tituloTienda {
 
 .tituloTienda2 {
   font-size: 45px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: relative;
 }
 
@@ -199,7 +205,7 @@ h2.tituloTienda {
 }
 .flexPan .tarjetaPan h4.subTarjeta {
   padding: 15px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bolder;
   font-size: 35px;
 }
@@ -230,6 +236,7 @@ h2.tituloTienda {
   width: 350px;
   height: 375px;
   position: relative;
+  margin: 15px;
 }
 #tiendaContainer .tarjetaProductos .tarjetaImg {
   width: 250px;
@@ -269,7 +276,7 @@ h2.tituloTienda {
   color: white;
   text-align: center;
   font-size: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-bottom: 10px;
   padding: 15px;
 }
@@ -278,7 +285,7 @@ h2.tituloTienda {
   background-color: white;
   text-align: center;
   font-size: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-bottom: 10px;
   padding: 15px;
 }

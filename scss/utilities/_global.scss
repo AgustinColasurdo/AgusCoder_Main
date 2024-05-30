@@ -2,14 +2,18 @@ h1 {
     text-align: center;
     padding: 30px;
     font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $font-titulo;
 }
 
 h2 {
     font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: $font-sub;
     text-align: center;
     padding: 15px
+}
+
+div.boxNav a:hover{
+    @extend %estilo-hover;
 }
 
 .letraGigante {
@@ -30,6 +34,7 @@ h2 {
     padding: 15px;
     position: relative;
     top: 15px;
+    font-family: $font-gral;
 }
 
 .textoTachado {

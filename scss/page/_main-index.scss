@@ -16,7 +16,7 @@ h2.subtituloOferta {
     text-align: center;
 
     .letraOferta {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: $font-gral;
         font-size: 22px;
     }
 }
@@ -27,7 +27,7 @@ h2.subtituloOferta {
 }
 
 .letraCard {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font-gral;
     font-size: 20px;
     font-weight: bolder;
 }
@@ -36,7 +36,7 @@ h2.subtituloOferta {
     @include flex(inherit, center, space-evenly, inherit);
 
     .verMas {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: $font-gral;
         text-decoration: none;
         color: black;
         font-size: 30px;
@@ -48,7 +48,7 @@ h2.subtituloOferta {
     background-color: black;
 
     .verMas2 {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: $font-gral;
         text-decoration: none;
         color: white;
         position: relative;

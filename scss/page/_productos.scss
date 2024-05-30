@@ -5,7 +5,7 @@ h2.tituloTienda {
 
 .tituloTienda2 {
     font-size: 45px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font-sub;
     position: relative;
 }
 
@@ -18,14 +18,14 @@ h2.tituloTienda {
 
         h4.subTarjeta {
             padding: 15px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: $font-sub;
             font-weight: bolder;
             font-size: 35px;
         }
 
         .fontTarjeta {
             font-size: 20px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: $font-gral;
             padding: 50px;
 
             .carritoPan {
@@ -49,6 +49,7 @@ h2.tituloTienda {
         width: 350px;
         height: 375px;
         position: relative;
+        margin: 15px;
 
         .tarjetaImg {
             width: 250px;
