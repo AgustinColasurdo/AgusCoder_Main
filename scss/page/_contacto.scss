@@ -1,3 +1,17 @@
+.linear-cont-top {
+    background: linear-gradient(to top, rgb(188, 245, 188,), white);
+}
+
+.linear-cont-bottom{
+    background: linear-gradient(to bottom, rgb(188, 245, 188,), white);
+} 
+
+form.form-size{
+    width: 70%;
+    height: 450px;
+    margin: 20px;
+}
+
 .textoContacto {
     text-align: center;
 }

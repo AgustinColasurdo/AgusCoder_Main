@@ -61,3 +61,18 @@
         grid-row: 2 / 3;
     }
 }
+
+.flex-y-gardiente {
+    @include flex (column, center, space-evenly, flex-wrap);
+    height: 500px;
+
+    li {
+        border: solid lightcoral 5px;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

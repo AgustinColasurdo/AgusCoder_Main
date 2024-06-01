@@ -9,6 +9,12 @@ h2.tituloTienda {
     position: relative;
 }
 
+.linear{
+    background: linear-gradient(to top, red, orange, yellow);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .flexPan {
     @include flex(inherit, inherit, space-evenly, inherit);
 
