@@ -9,8 +9,8 @@ h2.tituloTienda {
     position: relative;
 }
 
-.linear{
-    background: linear-gradient(to top, red, orange, yellow);
+.linear {
+    background: linear-gradient(to top, rgb(248, 92, 92), rgb(252, 203, 111), rgb(248, 248, 108));
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -27,6 +27,14 @@ h2.tituloTienda {
             font-family: $font-sub;
             font-weight: bolder;
             font-size: 35px;
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+            transition-delay: 5ms;
+
+            &:hover {
+                transform: translateY(20px);
+            }
         }
 
         .fontTarjeta {
@@ -50,32 +58,39 @@ h2.tituloTienda {
         padding: 20px;
         border: solid gray 5px;
         border-radius: 10px;
-        background-color: white;
+        background: linear-gradient(to top, rgb(255, 221, 159), rgb(253, 206, 255));
         text-align: center;
         width: 350px;
         height: 375px;
         position: relative;
         margin: 15px;
-
-        .tarjetaImg {
-            width: 250px;
-            height: 190px;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 5ms;
+        &:hover {
+            transform: translateY(-15px);
         }
+    }
 
-        .carrito {
-            width: 30px;
-            position: absolute;
-            right: 5px;
-            bottom: 5px;
-        }
+    .tarjetaImg {
+        width: 250px;
+        height: 190px;
+    }
 
-        .precioTarjeta {
-            position: absolute;
-            left: 7px;
-            bottom: 3px;
-            background-color: lightgrey;
-            padding: 5px;
-            border-radius: 10px;
-        }
+    .carrito {
+        width: 30px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .precioTarjeta {
+        position: absolute;
+        left: 7px;
+        bottom: 3px;
+        background-color: lightgrey;
+        padding: 5px;
+        border-radius: 10px;
     }
 }

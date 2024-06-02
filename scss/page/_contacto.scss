@@ -18,13 +18,23 @@ form.form-size{
 
 .tarjetaAsesorPadre {
     @include flex(inherit, inherit, space-evenly, inherit);
+    background: linear-gradient(to top, rgb(188, 245, 188,) ,white);
 
     .tarjetaAsesor {
         border: solid black;
-        width: 197px;
+        width: 280px;
         color: black;
         text-align: center;
         font-family: $font-gral;
+        background: linear-gradient(to top, rgb(255, 188, 255), rgb(255, 149, 149),);
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        transition-delay: 5ms;
+
+        &:hover {
+            transform: translateY(-15px);
+        }
 
         .imgAsesor {
             width: 185px;

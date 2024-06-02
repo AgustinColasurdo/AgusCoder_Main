@@ -182,13 +182,22 @@ form.form-size {
   align-items: inherit;
   justify-content: space-evenly;
   flex-wrap: inherit;
+  background: linear-gradient(to top, rgb(188, 245, 188), white);
 }
 .tarjetaAsesorPadre .tarjetaAsesor {
   border: solid black;
-  width: 197px;
+  width: 280px;
   color: black;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: linear-gradient(to top, rgb(255, 188, 255), rgb(255, 149, 149));
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 5ms;
+}
+.tarjetaAsesorPadre .tarjetaAsesor:hover {
+  transform: translateY(-15px);
 }
 .tarjetaAsesorPadre .tarjetaAsesor .imgAsesor {
   width: 185px;
@@ -207,7 +216,7 @@ h2.tituloTienda {
 }
 
 .linear {
-  background: linear-gradient(to top, red, orange, yellow);
+  background: linear-gradient(to top, rgb(248, 92, 92), rgb(252, 203, 111), rgb(248, 248, 108));
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -228,6 +237,13 @@ h2.tituloTienda {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bolder;
   font-size: 35px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 5ms;
+}
+.flexPan .tarjetaPan h4.subTarjeta:hover {
+  transform: translateY(20px);
 }
 .flexPan .tarjetaPan .fontTarjeta {
   font-size: 20px;
@@ -251,24 +267,31 @@ h2.tituloTienda {
   padding: 20px;
   border: solid gray 5px;
   border-radius: 10px;
-  background-color: white;
+  background: linear-gradient(to top, rgb(255, 221, 159), rgb(253, 206, 255));
   text-align: center;
   width: 350px;
   height: 375px;
   position: relative;
   margin: 15px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
 }
-#tiendaContainer .tarjetaProductos .tarjetaImg {
+#tiendaContainer .tarjetaProductos:hover {
+  transform: translateY(-15px);
+}
+#tiendaContainer .tarjetaImg {
   width: 250px;
   height: 190px;
 }
-#tiendaContainer .tarjetaProductos .carrito {
+#tiendaContainer .carrito {
   width: 30px;
   position: absolute;
   right: 5px;
   bottom: 5px;
 }
-#tiendaContainer .tarjetaProductos .precioTarjeta {
+#tiendaContainer .precioTarjeta {
   position: absolute;
   left: 7px;
   bottom: 3px;
