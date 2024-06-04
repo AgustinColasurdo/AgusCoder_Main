@@ -17,7 +17,9 @@ form.form-size{
 }
 
 .tarjetaAsesorPadre {
-    @include flex(inherit, inherit, space-evenly, inherit);
+    @include flex(row, inherit, space-evenly, wrap);
+    gap: 25px;
+    padding-bottom: 25px;
     background: linear-gradient(to top, rgb(188, 245, 188,) ,white);
 
     .tarjetaAsesor {
@@ -36,9 +38,23 @@ form.form-size{
             transform: translateY(-15px);
         }
 
-        .imgAsesor {
-            width: 185px;
-            height: 350px;
+        .img {
+            width: 270px;
+            height: 270px;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
         }
+    }
+}
+
+@include tablet {
+    .tarjetaAsesorPadre {
+        display: flex;
+        flex-direction: inherit;
+        align-items: inherit;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 }

@@ -1,38 +1,44 @@
-#footerPadre {
-    display: grid;
-    border: solid black;
-    background-color: darkgray;
-    height: 200px;
-    grid-template-columns: 10% 1fr 45%;
-    grid-template-rows: 80px 50px 50px;
-    grid-template-areas: "logo1 info2 tel3" "logo1 info2 tel3" "logo1 dir4 em5";
+.footer {
+    @include flex(column, start, start, nowrap);
+    padding: 10px 20px;
+    gap: 50px;
 
-    .redesFooter {
-        grid-area: logo1;
+    div img {
+      height: 30px;
+    }
 
-        div .logoFooter {
-            @include flex(column, inherit, inherit, inherit)
+    a {
+      text-decoration: none;
+      color: $color
+    }
+    
+    section {
+      ul, li {
+        padding-left: 0;
+        list-style: none;
+      }
+      &:has(>h4) {
+        @include flex(column, start, start, nowrap);
+        width: 100%;
+        gap: 10px;
+      }
+
+      &:not(:has(>h4)) {
+        @include flex(row, start, space-between, wrap);
+        width: 100%;
+        gap: 50px;
+        @include tablet {
+          @include flex(column, start, space-between, wrap);
         }
+      }
 
-        .imgFooter {
-            width: 30px;
-            height: 30px;
-        }
-    }
-
-    .infoFooter {
-        grid-area: info2;
-    }
-
-    .telFooter {
-        grid-area: tel3;
-    }
-
-    .direcFooter {
-        grid-area: dir4;
-    }
-
-    .emailFooter {
-        grid-area: em5;
+      h4::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: $color;
+        margin-top: 2px;
+      }
     }
 }

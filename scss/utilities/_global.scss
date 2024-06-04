@@ -1,6 +1,72 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYBLACKITALIC.OTF');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYBOLD.OTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYMEDIUMITALIC.OTF');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYREGULAR.OTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYTHINITALIC.OTF');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF');
+  font-weight: 200;
+  font-style: italic;
+}
+
+:root {
+  --bs-body-font-family: 'SF Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
 h1 {
     text-align: center;
-    padding: 30px;
     font-weight: bolder;
     font-family: $font-titulo;
 }
@@ -9,7 +75,6 @@ h2 {
     font-size: 50px;
     font-family: $font-sub;
     text-align: center;
-    padding: 15px
 }
 
 div.boxNav a:hover{
@@ -18,13 +83,6 @@ div.boxNav a:hover{
 
 .letraGigante {
     font-size: 150px;
-    color: black;
-}
-
-.letraGigante2 {
-    font-size: 150px;
-    color: white;
-    background-color: black;
 }
 
 .aclaraciones {
@@ -33,7 +91,6 @@ div.boxNav a:hover{
     font-size: 20px;
     padding: 15px;
     position: relative;
-    top: 15px;
     font-family: $font-gral;
 }
 

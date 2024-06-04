@@ -12,37 +12,21 @@
 
 <body>
 
-    <header class="positionSticky">
-        <div class="headerContainer">
-            <div class="boxLogo">
-                <a href="../index.html">
-                    <img class="iconSize" src="../assets/logos/appleLogo-removebg-preview.png" alt="logo apple ">
-                </a>
-            </div>
-            <div class="boxTitulo">
-                <h1>POLONIA APPLE TECH</h1>
-            </div>
-            <div class="boxNav">
-                <ul class="nav nav-tabs estiloNav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicioTecnico.html">Servicio Tecnico</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./capacitaciones.html">Capacitaciones</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navigation">
+        <div class="navmark">
+            <a href="/">
+                <img class="iconSize" src="/assets/logos/appleLogo-removebg-preview.png" alt="logo apple ">
+            </a>
+            <h1>POLONIA APPLE TECH</h1>
         </div>
-    </header>
+        <div class="navlinks">
+            <a href="/">Inicio</a>
+            <a href="./contacto.html" class="active">Contacto</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./servicioTecnico.html">Servicio Tecnico</a>
+            <a href="./capacitaciones.html">Capacitaciones</a>
+        </div>
+    </nav>
 
 
     <main>
@@ -56,13 +40,13 @@
         <section>
             <div class="linear-cont-bottom">
                 <h2>¡DEJANOS TUS DATOS Y UN ASESOR DE COMUNICA CON VOS!</h2>
-                <h4 class="textoContacto">Polonia Apple Tech es el Apple Premium Reseller mas innovador del pais.
+                <h4 class="textoContacto container">Polonia Apple Tech es el Apple Premium Reseller mas innovador del pais.
                     Contamos con Asesores de alto rendimiento para hacer de esta experiencia, UNICA. Trabajamos con
                     paciencia y dedicacion en cada caso, en cada venta... Escribinos y forma parte, aca sos
                     importante... </h4>
             </div>
 
-            <form class="form-size row g-3">
+            <form class="form-size row g-3 mx-auto">
                 <div class="col-md-4">
                     <label for="validationDefault01" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="validationDefault01" value="Steve" required>
@@ -114,27 +98,37 @@
 
         <section class="tarjetaAsesorPadre">
             <div class="tarjetaAsesor">
-                <img class="imgAsesor" src="../assets/img/asesor1.png" alt="asesor">
+                <div class="img">
+                  <img src="../assets/img/asesor1.png" alt="asesor">
+                </div>
                 <p>ASESOR 1</p>
                 <p>+54 911 ********</p>
             </div>
             <div class="tarjetaAsesor">
-                <img class="imgAsesor" src="../assets/img/asesor3.png" alt="asesor">
+                <div class="img">
+                  <img src="../assets/img/asesor3.png" alt="asesor">
+                </div>
                 <p>ASESOR 2</p>
                 <p>+54 911 ********</p>
             </div>
             <div class="tarjetaAsesor">
-                <img class="imgAsesor" src="../assets/img/asesor4.png" alt="asesor">
+              <div class="img">
+                <img src="../assets/img/asesor4.png" alt="asesor">
+              </div>
                 <p>ASESOR 3</p>
                 <p>+54 911 ********</p>
             </div>
             <div class="tarjetaAsesor">
-                <img class="imgAsesor" src="../assets/img/asesor2.png" alt="asesor">
+                <div class="img">
+                  <img src="../assets/img/asesor2.png" alt="asesor">
+                </div>
                 <p>ASESOR 4</p>
                 <p>+54 911 ********</p>
             </div>
             <div class="tarjetaAsesor">
-                <img class="imgAsesor" src="../assets/img/asesor5.png" alt="asesor">
+                <div class="img">
+                  <img class="imgAsesor" src="../assets/img/asesor5.png" alt="asesor">
+                </div>
                 <p>ASESOR 5</p>
                 <p>+54 911 ********</p>
             </div>
@@ -163,61 +157,54 @@
 
 
 
-    <footer id="footerPadre">
-        <section class="redesFooter">
-            <div>
-                <h4>REDES</h4>
-            </div>
-            <div class="logoFooter"> <a href="https://www.instagram.com/iclubapplear" target="_blank">
-                    <img class="imgFooter" src="../assets/logos/instLogo.jpg" alt="instagram logo">
-                </a>
+    <footer class="footer">
+        <section class="contacto">
+          <div>
+              <h4>REDES</h4>
+              <div class="logoFooter">
+                <a href="https://www.instagram.com/iclubapplear" target="_blank">
+                      <img class="imgFooter" src="../assets/logos/instLogo.jpg" alt="instagram logo">
+                  </a>
 
-                <a href="https://www.tiktok.com/@iclubapplear" target="_blank">
-                    <img class="imgFooter" src="../assets/logos/tiktoklogo.png" alt="tiktok logo">
-                </a>
+                  <a href="https://www.tiktok.com/@iclubapplear" target="_blank">
+                      <img class="imgFooter" src="../assets/logos/tiktoklogo.png" alt="tiktok logo">
+                  </a>
 
-                <a href="https://www.facebook.com/profile.php?id=61556069272240" target="_blank">
-                    <img class="imgFooter" src="../assets/logos/facebookLogo.jpg" alt="facebookLogo">
-                </a>
-            </div>
+                  <a href="https://www.facebook.com/profile.php?id=61556069272240" target="_blank">
+                      <img class="imgFooter" src="../assets/logos/facebookLogo.jpg" alt="facebookLogo">
+                  </a>
+              </div>
+          </div>
+          <div>
+              <h4>TELEFONOS</h4>
+              <div>
+                  <ul>
+                      <li>
+                        <a href="tel:011-1111-2222">011-1111-2222</a>
+                      </li>
+                      <li>
+                        <a href="tel:011-4255-5589">011-4255-5589</a>
+                      </li>
+                      <li>
+                        <a href="tel:011-5858-5858">011-5858-5858</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div>
+              <h4>DIRECCIONES</h4>
+              <p>Calle Banana Loca, Bs.As, Argentina</p>
+          </div>
+          <div>
+              <h4>EMAILS</h4>
+              <a href="mailto:poloniatechnologies@appletech.com">poloniatechnologies@appletech.com</a>
+          </div>
         </section>
         <section class="infoFooter">
-            <div>
-                <h4>INFO EXTRA</h4>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur totam asperiores tenetur
-                    nesciunt, cum natus voluptatibus sequi, ipsa rerum non repudiandae accusantium cupiditate est
-                    perferendis provident rem mollitia. Ab, vitae.</p>?
-            </div>
-        </section>
-        <section class="telFooter">
-            <div>
-                <h4>TELEFONOS</h4>
-            </div>
-            <div>
-                <ol>
-                    <li>011-1111-2222</li>
-                    <li>011-4255-5589</li>
-                    <li>011-5858-5858</li>
-                </ol>
-            </div>
-        </section>
-        <section class="direcFooter">
-            <div>
-                <h4>DIRECCIONES</h4>
-            </div>
-            <div>
-                <p>Calle Banana Loca, Bs.As, Argentina</p>
-            </div>
-        </section>
-        <section class="emailFooter">
-            <div>
-                <h4>EMAILS</h4>
-            </div>
-            <div>
-                <P>poloniatechnologies@appletech.com</P>
-            </div>
+            <h4>INFO EXTRA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur totam asperiores tenetur
+                nesciunt, cum natus voluptatibus sequi, ipsa rerum non repudiandae accusantium cupiditate est
+                perferendis provident rem mollitia. Ab, vitae.</p>
         </section>
     </footer>
 
