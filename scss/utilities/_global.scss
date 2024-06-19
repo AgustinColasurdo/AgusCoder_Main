@@ -83,6 +83,10 @@ div.boxNav a:hover{
 
 .letraGigante {
     font-size: 150px;
+
+    @include mobile{
+      font-size: 120px;
+    }
 }
 
 .aclaraciones {

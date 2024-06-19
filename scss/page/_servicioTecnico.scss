@@ -1,13 +1,9 @@
-#mainService {
-    background-color: black;
-}
-
 .containerBannerService {
     @include flex(inherit, inherit, center, inherit);
 
     .bannerService {
         width: 60vw;
-        
+
         @include mobile {
             width: 55vw;
         }
@@ -15,12 +11,19 @@
 }
 
 .parrafoSer1 {
-    color: white;
+    position: relative;
     text-align: center;
     font-size: 40px;
     font-family: $font-gral;
     margin-bottom: 10px;
     padding: 15px;
+
+    .img-fondo-st{
+        position: absolute;
+        height: 100%;
+        width: 30vw;
+        opacity: 50%;
+    }
 
     @include tablet {
         font-size: 30px;
@@ -28,33 +31,6 @@
 
     @include mobile {
         font-size: 15px;
-    }
-}
-
-.parrafoSer2 {
-    background-color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: $font-gral;
-    margin-bottom: 10px;
-    padding: 15px;
-
-    @include tablet {
-        font-size: 30px;
-    }
-
-    @include mobile {
-        font-size: 15px;
-    }
-}
-
-.imgSerCentro {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 25px;
-
-    @include tablet {
-        display: none;
     }
 }
 
@@ -71,3 +47,4 @@
         height: 10rem;
     }
 }
+

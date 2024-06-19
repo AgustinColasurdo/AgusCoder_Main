@@ -122,6 +122,11 @@ h2.tituloTienda {
             .tarjetaImg {
                 width: 210px;
                 height: 150px;
+
+                @include mobile{
+                    width: 180px;
+                    height: 110px;
+                }
             }
             
             .carrito {

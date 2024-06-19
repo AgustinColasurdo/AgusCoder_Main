@@ -1,12 +1,12 @@
 .linear-cont-top {
-    background: linear-gradient(to top, rgb(188, 245, 188,), white);
+    background: linear-gradient(to top, rgb(188, 245, 188, ), white);
 }
 
-.linear-cont-bottom{
-    background: linear-gradient(to bottom, rgb(188, 245, 188,), white);
-} 
+.linear-cont-bottom {
+    background: linear-gradient(to bottom, rgb(188, 245, 188, ), white);
+}
 
-form.form-size{
+form.form-size {
     width: 70%;
     height: 450px;
     margin: 20px;
@@ -20,7 +20,7 @@ form.form-size{
     @include flex(row, inherit, space-evenly, wrap);
     gap: 25px;
     padding-bottom: 25px;
-    background: linear-gradient(to top, rgb(188, 245, 188,) ,white);
+    background: linear-gradient(to top, rgb(188, 245, 188, ), white);
 
     .tarjetaAsesor {
         border: solid black;
@@ -28,7 +28,7 @@ form.form-size{
         color: black;
         text-align: center;
         font-family: $font-gral;
-        background: linear-gradient(to top, rgb(255, 188, 255), rgb(255, 149, 149),);
+        background: linear-gradient(to top, rgb(255, 188, 255), rgb(255, 149, 149), );
         transition-property: transform;
         transition-duration: 0.5s;
         transition-timing-function: ease-in;
@@ -42,8 +42,9 @@ form.form-size{
             width: 270px;
             height: 270px;
             overflow: hidden;
+
             img {
-              width: 100%;
+                width: 100%;
             }
         }
     }

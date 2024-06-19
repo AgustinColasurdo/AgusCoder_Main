@@ -83,6 +83,11 @@ h2 {
 .letraGigante {
   font-size: 150px;
 }
+@media (max-width: 768px) {
+  .letraGigante {
+    font-size: 120px;
+  }
+}
 
 .aclaraciones {
   background-color: lightgrey;
@@ -538,6 +543,14 @@ h2.tituloTienda {
     width: 210px;
     height: 150px;
   }
+}
+@media (max-width: 1024px) and (max-width: 768px) {
+  #tiendaContainer .tarjetaProductos .tarjetaImg {
+    width: 180px;
+    height: 110px;
+  }
+}
+@media (max-width: 1024px) {
   #tiendaContainer .tarjetaProductos .carrito {
     width: 25px;
     position: absolute;
@@ -611,10 +624,6 @@ h2.tituloTienda {
     display: none;
   }
 }
-#mainService {
-  background-color: black;
-}
-
 .containerBannerService {
   display: flex;
   flex-direction: inherit;
@@ -632,12 +641,18 @@ h2.tituloTienda {
 }
 
 .parrafoSer1 {
-  color: white;
+  position: relative;
   text-align: center;
   font-size: 40px;
   font-family: "SF Pro", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-bottom: 10px;
   padding: 15px;
+}
+.parrafoSer1 .img-fondo-st {
+  position: absolute;
+  height: 100%;
+  width: 30vw;
+  opacity: 50%;
 }
 @media (max-width: 1024px) {
   .parrafoSer1 {
@@ -647,36 +662,6 @@ h2.tituloTienda {
 @media (max-width: 768px) {
   .parrafoSer1 {
     font-size: 15px;
-  }
-}
-
-.parrafoSer2 {
-  background-color: white;
-  text-align: center;
-  font-size: 40px;
-  font-family: "SF Pro", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-bottom: 10px;
-  padding: 15px;
-}
-@media (max-width: 1024px) {
-  .parrafoSer2 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .parrafoSer2 {
-    font-size: 15px;
-  }
-}
-
-.imgSerCentro {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 25px;
-}
-@media (max-width: 1024px) {
-  .imgSerCentro {
-    display: none;
   }
 }
 
@@ -742,7 +727,7 @@ h2.tituloTienda {
 }
 @media (max-width: 768px) {
   .padreCapacitaciones .fontCapac {
-    font-size: 10px;
+    font-size: 30px;
   }
 }
 
