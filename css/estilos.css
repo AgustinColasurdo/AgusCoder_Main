@@ -114,39 +114,44 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  position: sticky;
-  left: 0;
-  top: 0;
-  padding: 10px 20px;
-  z-index: 100;
+  padding: 20px 25px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: white;
   color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-.navigation .navmark {
+.navigation .nav-toggle {
+  display: none;
+}
+.navigation .bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background: white;
+  color: black;
+  z-index: 1;
+}
+.navigation .bar .navmark {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
   gap: 10px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
 }
-.navigation .navmark img {
+.navigation .bar .navmark img {
   height: 50px;
 }
-.navigation .navmark h1 {
-  width: fit-content;
-  padding: 0;
+.navigation .bar .navmark h1 {
   margin: 0;
-  font-size: 1.5rem;
-}
-.navigation .navlinks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 10px;
-  list-style: none;
 }
 .navigation .navlinks a {
   padding: 5px 15px;
@@ -162,7 +167,11 @@ h2 {
 .navigation .navlinks a.active {
   background: rgba(0, 0, 0, 0.2);
 }
-
+@media (max-width: 768px) {
+  .navigation .bar h1 {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   .navigation {
     display: flex;
@@ -170,14 +179,42 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 20px;
+    padding: 10px 15px;
   }
   .navigation .navlinks {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    z-index: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .navigation .bar {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navigation .nav-toggle:checked ~ .navlinks {
+    padding-top: 20px;
+    max-height: 100vh;
+  }
+  .navigation .fa-times {
+    display: none;
+  }
+  .navigation .nav-toggle:checked ~ .bar .fa-bars {
+    display: none;
+  }
+  .navigation .nav-toggle:checked ~ .bar .fa-times {
+    display: block;
   }
 }
-.imgNormal img {
-  height: 30rem;
+@media (min-width: 1025px) {
+  .navigation .nav-toggle-label {
+    display: none;
+  }
 }
 
 h2.subtituloOferta {
@@ -345,6 +382,15 @@ h2.subtituloOferta {
 
 .card {
   margin-bottom: 1px !important;
+}
+
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  background: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1024px) {
+  .carousel img {
+    height: 30vh;
+  }
 }
 
 .linear-cont-top {

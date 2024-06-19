@@ -1,0 +1,95 @@
+.navigation {
+  @include flex(row, center, space-between, nowrap);
+  padding: 20px 25px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: $background;
+  color: $color;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .bar {
+    @include flex(row, center, center, nowrap);
+    background: $background;
+    color: $color;
+    z-index: 1;
+
+    .navmark {
+      @include flex(row, center, center, nowrap);
+      gap: 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: $color;
+      img {
+        height: 50px;
+      }
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+
+  .navlinks a {
+    padding: 5px 15px; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &.active {
+      background: rgba(0,0,0,0.2);
+    }
+  }
+
+  @include mobile {
+    .bar h1 {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    @include flex(column, center, center, nowrap);
+    padding: 10px 15px; 
+    .navlinks {
+      @include flex(column, center, center, nowrap);
+      width: 100%;
+      z-index: 0;
+      transition: all 0.5s;
+      overflow: hidden;
+      max-height: 0;
+    }
+    .bar {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .nav-toggle:checked ~ .navlinks {
+      padding-top: 20px;
+      max-height: 100vh;
+    }
+    .fa-times {
+      display: none;
+    }
+    .nav-toggle:checked ~ .bar {
+      .fa-bars {
+        display: none;
+      }
+      .fa-times {
+        display: block;
+      }
+    }
+  }
+
+  @include desktop {
+    .nav-toggle-label {
+      display: none;
+    }
+  }
+}
