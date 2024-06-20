@@ -10,6 +10,13 @@
     }
 }
 
+.titulo-st{
+    font-size: 80px;
+
+    @include mobile{
+        font-size: 25px;
+    }
+}
 .parrafoSer1 {
     position: relative;
     text-align: center;
