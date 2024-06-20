@@ -21,6 +21,11 @@ h2.tituloTienda {
     background: linear-gradient(to top, rgb(248, 92, 92), rgb(252, 203, 111), rgb(248, 248, 108));
     margin-top: 20px;
     margin-bottom: 20px;
+h2{
+    @include mobile{
+        font-size: 35px
+    }
+}
 }
 
 .flexPan {
@@ -84,15 +89,7 @@ h2.tituloTienda {
     width: 90vw;
     margin: 40px;
 
-    @include mobile {
-        display: grid;
-        grid-template-columns: 2, 1fr;
-        grid-template-rows: 5, 1fr;
-        row-gap: 10px;
-        column-gap: 10px;
-        width: 25vw;
-        margin: 15px;
-        grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8" "prod9 prod10";
+    @include tablet {
     }
 
     .tarjetaProductos {
